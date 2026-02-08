@@ -18,6 +18,8 @@ services:
       - backend
     depends_on:
       - redis
+    environment:
+      - REDIS_URL=redis://redis:6379
 
   redis:
     image: redis:latest
@@ -26,6 +28,8 @@ services:
       - backend
     expose:
       - "6379"
+    environment:
+      - REDIS_PASSWORD=somepassword
 
 networks:
   backend:
