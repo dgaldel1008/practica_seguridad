@@ -37,11 +37,11 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
 sudo docker-compose up --build
-
+```
 
 # Pruebas
-
+```bash
 curl -i http://localhost
-
-curl -i http://localhost
+```
+Usar las veces necesarias para ver que todo funciona correctamente.
 
